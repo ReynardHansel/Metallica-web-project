@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Nunito:ital@1&display=swap');
+
+@font-face {
+    font-family: 'Pastor of Muppets';
+    src: url(Fonts/Pastor\ of\ Muppets.TTF) format("truetype");
+}
+
+* {
+    font-family: PT Sans;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    margin: 100px auto;
+}
+
+.scaling {
+    transform: scale(0.8, 0.8);
+}
+
+         /* nav section */
+
+.main-header {
+    background-image: url(Image/ea7e05d9-b961-4cae-8a3d-35b519c8d999.jpg);
+    background-color:rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    padding: .5em;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-family: 'Nunito';
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.band-name {
+    font-family: 'Pastor of Muppets';
+    text-align: center;
+    font-weight: normal;
+    font-size: 4em;
+    color: white;
+    margin: 0;
+}
+
+.band-name-large {
+    font-size: 10em;
+}
+
+            /*--end of nav section--*/
+
+            /* Quotes section */
+
+.photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 330px 1.3fr; 
+    grid-template-rows: 0.5fr 1.5fr; 
+    gap: 5px; 
+    padding-left: 25px;
+    justify-content: start;
+    grid-template-areas: 
+      "pic name"
+      "pic Quotes"; 
+  }
+  .pic { 
+      grid-area: pic;
+    }
+  .name { 
+      grid-area: name;
+      text-align: left;
+      font-weight: bold;
+      font-size: 2.5em; 
+      padding-top: 10px; 
+    }
+  .Quotes { 
+      grid-area: Quotes; 
+      max-height: 100%;
+      font-size: 2em;
+      font-weight: lighter;
+      padding-top: 3%;
+    }
+
+
+.container2 {
+        display: grid; 
+        grid-template-columns: 1.3fr 330px; 
+        grid-template-rows: 0.5fr 1.5fr; 
+        gap: 5px;
+        grid-template-areas: 
+          "name2 pic"
+          "Quotes2 pic"; 
+      }
+      .pic { 
+          grid-area: pic;
+        }
+      .name2 { 
+          grid-area: name2;
+          text-align: right;
+          font-weight: bold;
+          font-size: 2.5em; 
+          padding-top: 10px; 
+          padding-right: 10px;
+        }
+      .Quotes2 { 
+          grid-area: Quotes2;
+          text-align: right;
+          font-size: 2em;
+          font-weight: lighter;
+          padding-top: 3%;
+          padding-right: 10px;
+        }
+
+        /* end of quotes section */
+
+.introduction {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 1em 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Nunito';
+}
+
+
+/* --> figure out how to resize the screen */
+
+.flex-footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: .25em 0;
+    height: 80px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-container li {
+    padding: 0 .5em
+}
+
+.footer-nav img {
+    height: 30px;
+    width: 30px;
+}
+
